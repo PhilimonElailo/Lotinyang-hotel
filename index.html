@@ -4,87 +4,255 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lotinyang Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/symbol.png">
 </head>
 <body>
     <nav class="navbar">
-        <img src="img/symbol.png" alt="hotel symbol" class="symbol">
+        <a href="#home" class="brand">
+            <img src="img/symbol.png" alt="Lotinyang Hotel symbol" class="symbol">
+            <div class="brand-text">
+                <span class="brand-name">Lotinyang Hotel</span>
+                <span class="brand-tag">Boutique stay and dining</span>
+            </div>
+        </a>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about us">About Us</a></li>
-            <li><a href="#delicacies">Delicacies</a></li>
-            <li><a href="#book now">Book Now</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#suites">Suites</a></li>
+            <li><a href="#delicacies">Dining</a></li>
+            <li><a href="#moments">Moments</a></li>
+            <li><a href="#book-now" class="nav-cta">Reserve</a></li>
         </ul>
     </nav>
-    <!-- Home Section -->
-    <section id="home" class="home-section">
-        <div class="hero-content">
-         <h1>Stay A <span class="highlight">while</span></h1>
-         <p>Experience world-class comfort</p>
-       </div>
-    </section>
 
-        <!-- About Us Section -->
-    <section id="about us" class="about-section">
-        <h1>About Us</h1>
-        <div class="about-container">
-            <div class="about-block">
-                <img src="img/img2.jpg" alt="">
-                <p>Welcome to Lotinyang Hotel, where comfort meets elegance. Nested in the heart of the city, we offer a serene escape for travelers and guests seeking top-notch hospitality. Every corner of our hotel is designed to provide a relaxing and memorable stay.</p>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-shell">
+                <div class="hero-copy">
+                    <p class="eyebrow">A slower, warmer kind of luxury</p>
+                    <h1>Where city energy meets quiet comfort.</h1>
+                    <p class="hero-text">Lotinyang Hotel is a boutique retreat shaped around soft mornings, memorable dining, and restful nights wrapped in thoughtful service.</p>
+                    <div class="hero-actions">
+                        <a href="#book-now" class="button button-primary">Book your stay</a>
+                        <a href="#about-us" class="button button-secondary">Explore the story</a>
+                    </div>
+                </div>
+                <aside class="hero-panel">
+                    <p class="panel-label">Signature highlights</p>
+                    <div class="panel-grid">
+                        <article>
+                            <h2>24/7 welcome</h2>
+                            <p>Personal hospitality from arrival to checkout.</p>
+                        </article>
+                        <article>
+                            <h2>Curated dining</h2>
+                            <p>Local flavors presented with a refined touch.</p>
+                        </article>
+                        <article>
+                            <h2>Garden calm</h2>
+                            <p>Quiet corners and elegant spaces to unwind.</p>
+                        </article>
+                        <article>
+                            <h2>Event-ready</h2>
+                            <p>Ideal for weekend escapes, dinners, and gatherings.</p>
+                        </article>
+                    </div>
+                </aside>
             </div>
-            <div class="about-block reverse">
-                <img src="img/img3.jpg" alt="">
-                <p>From our exquisite dining options to our world-class amenities, we strive to create an experience that goes beyond expectations. Our dedicated staff is committed to ensuring that your visit is enjoyable, seamless, and truly unforgettable. Come and discover the luxury and warmth that defines Lotinyang Hotel.</p>
-                
+        </section>
+
+        <section id="about-us" class="story-section">
+            <div class="section-heading">
+                <p class="eyebrow">About us</p>
+                <h2>An intimate hotel with a stronger point of view.</h2>
             </div>
+            <div class="story-layout">
+                <article class="story-card story-card-large">
+                    <img src="img/img2.jpg" alt="Hotel interior at Lotinyang Hotel">
+                    <div class="story-card-copy">
+                        <h3>Comfort designed to feel personal</h3>
+                        <p>Welcome to Lotinyang Hotel, where comfort meets elegance in a way that feels warm rather than formal. From the moment guests arrive, the atmosphere is calm, polished, and built for memorable stays.</p>
+                    </div>
+                </article>
+                <article class="story-card">
+                    <img src="img/img3.jpg" alt="Guest experience at Lotinyang Hotel">
+                    <div class="story-card-copy">
+                        <h3>Hospitality that goes beyond the room</h3>
+                        <p>Every detail, from dining to service, is shaped to feel seamless. Our team focuses on thoughtful touches that turn a simple booking into a stay worth returning to.</p>
+                    </div>
+                </article>
+                <div class="values-strip">
+                    <div>
+                        <span>01</span>
+                        <p>Elegant rooms with restful lighting and clean, modern finishes.</p>
+                    </div>
+                    <div>
+                        <span>02</span>
+                        <p>Friendly service that feels attentive without being intrusive.</p>
+                    </div>
+                    <div>
+                        <span>03</span>
+                        <p>Dining and gathering spaces designed for shared moments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="suites" class="suites-section">
+            <div class="section-heading section-heading-dark">
+                <p class="eyebrow">Stay options</p>
+                <h2>Rooms with distinct moods, not just matching walls.</h2>
+            </div>
+            <div class="suite-grid">
+                <article class="suite-card">
+                    <span class="suite-kicker">The Garden Suite</span>
+                    <h3>For slow mornings and quiet weekends</h3>
+                    <p>Soft textures, natural light, and a relaxed layout perfect for couples or solo travelers looking for breathing room.</p>
+                </article>
+                <article class="suite-card accent-card">
+                    <span class="suite-kicker">The Skyline Room</span>
+                    <h3>For city energy with refined comfort</h3>
+                    <p>A contemporary stay with striking views, plush finishes, and the kind of atmosphere that makes short visits feel special.</p>
+                </article>
+                <article class="suite-card">
+                    <span class="suite-kicker">The Family Haven</span>
+                    <h3>For shared stays that still feel polished</h3>
+                    <p>Practical, spacious, and welcoming, with enough flexibility for families and groups without losing the boutique character.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="delicacies" class="delicacies-section">
+            <div class="section-heading">
+                <p class="eyebrow">Dining</p>
+                <h2>Food that feels like part of the destination.</h2>
+            </div>
+            <div class="delicacies-lead">
+                <p>Our kitchen brings together local richness and contemporary presentation, whether you are joining us for breakfast, a relaxed lunch, or a polished evening meal.</p>
+            </div>
+            <div class="delicacies-gallery">
+                <img src="img/img6.jpg" alt="Prepared meal at Lotinyang Hotel">
+                <img src="img/img7.jpg" alt="Fresh dining presentation at Lotinyang Hotel">
+                <img src="img/img8.jpg" alt="Dining table setup at Lotinyang Hotel">
+                <img src="img/img9.jpg" alt="Chef crafted dish at Lotinyang Hotel">
+            </div>
+            <div class="delicacies-container">
+                <article class="delicacies-block">
+                    <img src="img/img4.jpg" alt="Signature hotel dish">
+                    <div>
+                        <h3>Signature plates worth lingering over</h3>
+                        <p>Indulge in dishes crafted from fresh ingredients and balanced flavors. The menu blends familiar comfort with a touch of occasion, creating meals that are both satisfying and memorable.</p>
+                    </div>
+                </article>
+                <article class="delicacies-block reverse">
+                    <img src="img/img5.jpg" alt="Elegant restaurant dining">
+                    <div>
+                        <h3>A dining room built for atmosphere</h3>
+                        <p>From morning coffee to elegant dinner service, the setting is designed to feel inviting, stylish, and quietly impressive without losing warmth.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="moments" class="moments-section">
+            <div class="section-heading section-heading-dark">
+                <p class="eyebrow">Moments at Lotinyang</p>
+                <h2>More than a stay: a place for gatherings, meals, and memories.</h2>
+            </div>
+            <div class="moments-layout">
+                <div class="moment-quote">
+                    <p>"The atmosphere is calm, elegant, and welcoming from the first step inside."</p>
+                </div>
+                <div class="moment-list">
+                    <article>
+                        <span class="moment-tag">Stay</span>
+                        <h3>Weekend escapes</h3>
+                        <p>Reset in a calm room, wake up slowly, and enjoy a softer pace without giving up comfort or style.</p>
+                    </article>
+                    <article>
+                        <span class="moment-tag">Dine</span>
+                        <h3>Celebration dinners</h3>
+                        <p>Host birthdays, anniversaries, and intimate evening plans in a setting that already feels occasion-ready.</p>
+                    </article>
+                    <article>
+                        <span class="moment-tag">Gather</span>
+                        <h3>Business stays</h3>
+                        <p>For guests on a focused schedule, the atmosphere stays polished, practical, and easy to settle into.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="book-now" class="booking-section">
+            <div class="booking-shell">
+                <div class="booking-copy">
+                    <p class="eyebrow">Reserve your room</p>
+                    <h2>Plan a stay that feels considered from the very beginning.</h2>
+                    <p>Tell us when you would like to arrive, and we will be ready to welcome you with comfort, care, and a little more character than the usual hotel experience.</p>
+                </div>
+                <form class="booking-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="checkin">Check-in date</label>
+                    <input type="date" id="checkin" name="checkin" required>
+
+                    <label for="checkout">Check-out date</label>
+                    <input type="date" id="checkout" name="checkout" required>
+
+                    <button type="submit">Reserve now</button>
+                    <p class="booking-message" id="booking-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p class="footer-brand">Lotinyang Hotel</p>
+            <p>Elegant stays, thoughtful dining, and a warmer welcome.</p>
         </div>
-    </section>
-
-    <!-- Delicacies Section -->
-    <section id="delicacies" class="delicacies-section">
-        <h1>Delicacies</h1>
-        <div class="delicacies-gallery">
-            <img src="img/img6.jpg" alt="">
-            <img src="img/img7.jpg" alt="">
-            <img src="img/img8.jpg" alt="">
-            <img src="img/img9.jpg" alt="">
-        </div>
-        <div class="delicacies-container">
-            <div class="delicacies-block">
-                <img src="img/img4.jpg" alt="">
-                <p>Indulge in a culinary journey at our hotel restaurant, where we serve a delectable array of dishes crafted from the freshest ingredients. Our menu features a fusion of local and international flavors, designed to tantalize your taste buds and satisfy your cravings.</p>
-            </div>
-            <div class="delicacies-block reverse">
-                <img src="img/img5.jpg" alt="">
-                <p>Whether you're in the mood for a hearty breakfast, a light lunch, or an elegant dinner, our chefs are dedicated to creating meals that are both delicious and visually stunning. Join us for an unforgettable dining experience that will leave you wanting more.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Book Now Section -->
-    <section id="book now" class="booking-section">
-        <h1>Book Now</h1>
-        <form class="booking-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="checkin">Check-in Date:</label>
-            <input type="date" id="checkin" name="checkin" required>
-
-            <label for="checkout">Check-out Date:</label>
-            <input type="date" id="checkout" name="checkout" required>
-
-            <button type="submit">Book Now</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Lotinyang Hotel. All rights reserved.</p>
-        
+        <p>&copy; 2026 Lotinyang Hotel. All rights reserved.</p>
     </footer>
+
+    <script>
+        const bookingForm = document.querySelector('.booking-form');
+        const bookingMessage = document.getElementById('booking-message');
+        const whatsappNumber = '254794632912';
+
+        bookingForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(bookingForm);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const checkin = formData.get('checkin');
+            const checkout = formData.get('checkout');
+
+            const whatsappText = [
+                'New booking request for Lotinyang Hotel',
+                '',
+                'Name: ' + name,
+                'Email: ' + email,
+                'Check-in: ' + checkin,
+                'Check-out: ' + checkout
+            ].join('\n');
+
+            const whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(whatsappText);
+
+            window.open(whatsappUrl, '_blank', 'noopener');
+
+            bookingMessage.textContent = 'Booking details prepared for WhatsApp. Please send the message in WhatsApp to complete your request.';
+            bookingMessage.classList.add('is-visible');
+            bookingForm.reset();
+        });
+    </script>
 </body>
 </html>
